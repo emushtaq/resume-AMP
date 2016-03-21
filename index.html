@@ -17,17 +17,17 @@ layout: default
             <h2 class="post-title" itemprop="name"><a href="{{ site.baseurl }}{{ post.url }}" itemprop="url">{{ post.title }}</a></h2>
           </header>
           <section class="post-excerpt" itemprop="description">
-            <p>{{ post.excerpt | strip_html | truncatewords: 50 }}</p>
+            <p>{{ post }}</p>
           </section>
-          <div class="post-meta">
+          <!--<div class="post-meta">
             <time datetime="{{ post.date | date_to_long_string }}">{{ post.date | date_to_long_string }}</time>
-          </div>
+          </div>-->
         </div>
       </article>
     {% endfor %}
   </div>
 
-  <nav class="pagination" role="navigation">
+  <!--<nav class="pagination" role="navigation">
     {% if paginator.next_page %}
       <a class="newer-posts" href="/page{{paginator.next_page}}">&larr; Older posts</a>
     {% endif %}
@@ -39,7 +39,7 @@ layout: default
         <a class="older-posts" href="/page{{paginator.previous_page}}">Newer posts &rarr;</a>
       {% endif %}
     {% endif %}
-  </nav>
+  </nav>-->
 
 </main>
 
